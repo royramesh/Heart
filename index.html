@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main" onclick="myFunction()">
+      <div class="i"><p id="i">I</p></div>
+      <div class="heart" id="h"></div>
+      <!-- <p id="name"></p> -->
+      <div class="u"><p>U</p></div>
+    </div>
+    
+  </body>
+  <script>
+    function myFunction(){
+      var x=document.getElementById("h");
+      if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  document.getElementById("name").innerHTML="Dia";
+    }
+  </script>
+</html>
