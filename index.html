@@ -10,20 +10,24 @@
     <div class="main" onclick="myFunction()">
       <div class="i"><p id="i">I</p></div>
       <div class="heart" id="h"></div>
-      <!-- <p id="name"></p> -->
+      <p id="name"></p>
       <div class="u"><p>U</p></div>
     </div>
     
   </body>
   <script>
     function myFunction(){
+      document.getElementById("name").innerHTML="Love";
       var x=document.getElementById("h");
       if (x.style.display === "none") {
     x.style.display = "block";
+    document.getElementById("name").style.display = "none";
   } else {
     x.style.display = "none";
+    document.getElementById("name").style.display = "block";
+    
   }
-  document.getElementById("name").innerHTML="Dia";
+  
     }
   </script>
 </html>

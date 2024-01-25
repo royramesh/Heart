@@ -33,9 +33,12 @@
     left: -100px;
 }
 .main{
-    display: flex;
-  justify-content: center;
-  align-items: center;
+    /* margin: 0; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
 }
 .i,.u{
     text-align: center;
@@ -96,4 +99,34 @@ p{
       align-items: center;
     }
   }
+  @media only screen and (max-width: 383px) {
+    .heart{
+        height: 50px;
+        width:50px;
+        background-color: red;
+        margin: 25px;
+        position: relative;
+        animation: heartBit 1s infinite;
+        transform: rotate(180deg);
+        rotate: 45deg;
+        
+    }
+    .heart::after,.heart::before{
+        content: "";
+        height: 50px;
+        width:50px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute; 
+       
+    
+    }
+    .heart::after{
+        top: -25px;
+        right: 0;
+    }
+    .heart::before{
+        top: 0;
+        left: -25px;
+    }}
   
